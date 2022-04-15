@@ -7,9 +7,13 @@ update 2022-04-15 begin
 Ubuntu 20.04.3 LTS
 
 apt install mingw-w64
+
 update Makefile.MinGW32:
+
 FLAGS=CC=i686-w64-mingw32-g++-win32 LD=i686-w64-mingw32-g++-win32 LDFLAGS=-lws2_32 NAME=tcptunnel.exe
+
 make -f Makefile.MinGW32
+
 update 2022-04-15 end
 
 ```
